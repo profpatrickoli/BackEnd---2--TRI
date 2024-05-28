@@ -1,0 +1,19 @@
+[
+    {
+        "nome": "x-burguer",
+        "preco": 10.0,
+        "ingredientes": ["pão", "hamburguer", "queijo"]
+    },
+    {
+        "nome": "x-salada",
+        "preco": 12.0,
+        "ingredientes": ["pão", "hamburguer", "queijo", "salada"]
+    },
+    {
+        "nome": "x-ratazana",
+        "preco": 30.0,
+        "ingredientes": ["pão", "hamburguer", "queijo", "ratazana"]
+    }
+]
+
+

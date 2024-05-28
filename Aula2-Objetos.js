@@ -16,7 +16,7 @@ lanches.push(criaLanche("x-ratazana", 30.0, ["pão", "hamburguer", "queijo", "ra
 /* Para essa aula:
 1 - Criar uma função para alterar o preço do lanche.
 2 - Criar uma função para alterar os ingredientes do lanche.
-3 - Criar uma função para mostrar todos os lanche.
+3 - Criar uma função para mostrar todos os lanches.
 */
 function alteraPreco(lanche, novoPreco) {
     lanche.preco = novoPreco;
