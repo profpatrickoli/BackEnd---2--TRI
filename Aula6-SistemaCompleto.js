@@ -2,7 +2,7 @@
 //  1 - Cadastrar os produtos
 //  2 - Salvar em um arquivo
 //  3 - Mostrar os produtos de forma ordenada
-perucas = [];
+let perucas = [];
 lerPerucas();
 
 
