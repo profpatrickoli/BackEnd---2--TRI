@@ -5,18 +5,13 @@
 let perucas = [];
 lerPerucas();
 
-
-// lendo arquivo
-
 cadastrarPeruca("Loiro", 60, "Liso", "Solto", 500.0);
 cadastrarPeruca("Moreno", 40, "Liso", "Solto", 350.0);
 cadastrarPeruca("Azul", 70, "Liso", "Preso", 550.0);
 cadastrarPeruca("Moreno", 50, "Cacheado", "Solto", 600.0);
 cadastrarPeruca("Ruivo", 60, "Ondulado", "Solto", 550.0);
 
-
-
-const ordenadoCor = ordenar(perucas, "cor");
+//const ordenadoCor = ordenar(perucas, "cor");
 const ordenadoPreco = ordenar(perucas, "preco");
 
 // MOSTRA AS PERUCAS ORDENADAS NA TELA
@@ -29,6 +24,9 @@ ordenadoPreco.forEach(peruca => {
                 + ", R$ " + peruca.preco)
 });
 
+function lerPerucas(){
+    perucas = require("./perucas.json");
+}
 
 function cadastrarPeruca(cor, tamanho, tipo, penteado, preco){
     const encontrado = encontrar(perucas, "cor", cor);
@@ -65,9 +63,4 @@ function ordenar(lista, chave){
         }
         return 0;
     });
-}
-
-
-function lerPerucas(){
-    perucas = require("./perucas.json");
 }
